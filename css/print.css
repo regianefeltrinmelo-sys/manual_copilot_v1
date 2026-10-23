@@ -1,27 +1,21 @@
-/* =====================================================
-   IMPRESSÃO DO MANUAL
-   ===================================================== */
-
 @media print {
 
-    /* Configuração da página */
-    @page {
-        margin: 2cm;
-        size: A4;
+    .indice{
+        display:none;
     }
 
-    html,
-    body {
-        background: #fff;
-        color: #000;
-        font-size: 12pt;
-        line-height: 1.5;
+    img{
+        max-width:100%;
+        page-break-inside:avoid;
     }
 
-    /* Oculta elementos de navegação */
-    .indice,
-    .voltar-topo,
-    nav,
-    footer {
-        display: none !important;
- 
+    h1,h2{
+        page-break-after:avoid;
+    }
+
+    body{
+        color:#000;
+        background:#fff;
+    }
+
+}
