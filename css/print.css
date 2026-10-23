@@ -1,17 +1,25 @@
+/* =====================================================
+   IMPRESSÃO / PDF
+===================================================== */
+
 @media print {
+
+    /* CONFIGURAÇÃO DA PÁGINA */
 
     @page {
         size: A4;
         margin: 2cm;
     }
 
+    html,
     body {
-        background: white;
-        color: black;
+        background: white !important;
+        color: black !important;
         font-size: 11pt;
+        line-height: 1.5;
     }
 
-    /* Esconder elementos da versão tela */
+    /* ESCONDER ELEMENTOS DA TELA */
 
     .sidebar,
     .btn-imprimir,
@@ -19,13 +27,14 @@
         display: none !important;
     }
 
-    /* Capa */
+    /* CAPA */
 
     .capa {
         background: white !important;
         color: black !important;
         text-align: center;
-        margin-top: 100px;
+        padding-top: 180px;
+        border: none;
         page-break-after: always;
     }
 
@@ -35,13 +44,14 @@
     }
 
     .versao {
-        font-size: 14pt;
+        font-size: 16pt;
     }
 
-    /* Sumário */
+    /* SUMÁRIO DE IMPRESSÃO */
 
     .sumario-impressao {
         display: block !important;
+        margin-bottom: 40px;
         page-break-after: always;
     }
 
@@ -50,54 +60,36 @@
     }
 
     .sumario-impressao ol {
-        margin-left: 25px;
+        margin-left: 30px;
     }
 
     .sumario-impressao li {
-        margin-bottom: 8px;
+        margin-bottom: 10px;
     }
 
-    /* Conteúdo */
+    /* CONTEÚDO */
 
     .container {
-        display: block;
+        display: block !important;
+        max-width: 100%;
     }
 
     main {
         padding: 0;
+        width: 100%;
     }
 
     section {
-        margin-bottom: 30px;
+        margin-bottom: 25px;
         page-break-inside: avoid;
     }
 
     section h2 {
-        margin-top: 20px;
+        color: black !important;
+        border-bottom: 1px solid #999;
+        margin-top: 25px;
     }
 
-    /* Imagens */
+    /* IMAGENS */
 
-    img {
-        max-width: 100%;
-        page-break-inside: avoid;
-    }
-
-    /* Tabelas */
-
-    table {
-        page-break-inside: avoid;
-    }
-
-    tr {
-        page-break-inside: avoid;
-    }
-
-    /* Links */
-
-    a {
-        color: black;
-        text-decoration: none;
-    }
-
-}
+    
