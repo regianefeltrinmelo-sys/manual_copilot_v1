@@ -63,3 +63,59 @@ ol li,
 ul li{
     margin-bottom:8px;
 }
+.container{
+    display:flex;
+    gap:20px;
+}
+
+.sidebar{
+    width:280px;
+    position:sticky;
+    top:20px;
+    align-self:flex-start;
+    max-height:90vh;
+    overflow:auto;
+    border-right:1px solid #ddd;
+    padding-right:15px;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    margin-bottom:8px;
+}
+
+.sidebar a{
+    text-decoration:none;
+    color:#005ea5;
+}
+
+.sidebar a:hover{
+    text-decoration:underline;
+}
+
+main{
+    flex:1;
+    min-width:0;
+}
+
+#btn-topo{
+    display:none;
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    padding:10px 15px;
+    cursor:pointer;
+}
+
+.capa{
+    text-align:center;
+    padding:40px;
+}
+
+section{
+    scroll-margin-top:30px;
+}
