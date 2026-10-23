@@ -1,49 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manual do Sistema</title>
+
+    <link rel="stylesheet" href="css/manual.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+
 <body>
 
-<header class="capa">
-    <h1>Manual do Sistema</h1>
-    <p>Versão 1.0</p>
+    <!-- CAPA -->
 
-    <button onclick="window.print()">
-        Imprimir Manual
-    </button>
-</header>
+    <header class="capa">
 
-<div class="container">
+        <h1>Manual do Sistema</h1>
 
-    <aside class="sidebar">
+        <p class="versao">
+            Versão 1.0
+        </p>
+
+        <button class="btn-imprimir" onclick="window.print()">
+            🖨️ Imprimir / Salvar PDF
+        </button>
+
+    </header>
+
+    <!-- SUMÁRIO PARA IMPRESSÃO -->
+
+    <div class="sumario-impressao">
 
         <h2>Sumário</h2>
 
-        <ul id="menu-list"></ul>
+        <ol id="sumario-print">
+        </ol>
 
-    </aside>
+    </div>
 
-    <main>
+    <!-- ÁREA PRINCIPAL -->
 
-        <section id="introducao">
-            <h2>Introdução</h2>
-            <p>Conteúdo...</p>
-        </section>
+    <div class="container">
 
-        <section id="acesso">
-            <h2>Acesso ao Sistema</h2>
-            <p>Conteúdo...</p>
-        </section>
+        <!-- MENU LATERAL -->
 
-        <section id="cadastro">
-            <h2>Cadastro</h2>
-            <p>Conteúdo...</p>
-        </section>
+        <aside class="sidebar">
 
-    </main>
+            <h2>Sumário</h2>
 
-</div>
+            <ul id="menu-list"></ul>
 
-<button id="btn-topo">
-    ↑ Topo
-</button>
+        </aside>
 
-<script src="js/manual.js"></script>
+        <!-- CONTEÚDO -->
+
+        <main>
+
+            <section id="introducao">
+
+                <h2>Introdução</h2>
+
+                <p>
+                    Apresente aqui o objetivo do manual.
+                </p>
+
+            </section>
+
+
+            <section id="acesso">
+
+                <h2>Acesso ao Sistema</h2>
+
+                <p>
+                    Descreva como acessar o sistema.
+                </p>
+
+                <img
+                    src="assets/images/tela-login.png"
+                    alt="Tela de Login">
+
+            </section>
+
+
+            <section id="cadastro">
+
+                <h2>Cadastro</h2>
+
+                <p>
+                    Explique o processo de cadastro.
+                </p>
+
+            </section>
+
+
+            <section id="consultas">
+
+                <h2>Consultas</h2>
+
+                <p>
+                    Instruções para consultas.
+                </p>
+
+            </section>
+
+
+            <section id="relatorios">
+
+                <h2>Relatórios</h2>
+
+                <p>
+                    Informações sobre relatórios.
+                </p>
+
+            </section>
+
+
+            <section id="faq">
+
+                <h2>Perguntas Frequentes</h2>
+
+                <p>
+                    Dúvidas mais comuns dos usuários.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- BOTÃO TOPO -->
+
+    <button
+        id="btn-topo"
+        onclick="window.scrollTo({top:0,behavior:'smooth'})">
+
+        ↑ Topo
+
+    </button>
+
+    <script src="js/manual.js"></script>
 
 </body>
+
+</html>
