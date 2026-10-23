@@ -1,121 +1,93 @@
-body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    padding:0;
-    background:#ffffff;
-    color:#333;
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container{
-    max-width:1200px;
-    margin:auto;
-    padding:30px;
+html {
+    scroll-behavior: smooth;
 }
 
-h1{
-    color:#1351b4;
-    border-bottom:3px solid #1351b4;
-    padding-bottom:10px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #333;
+    background: #f5f6f7;
 }
 
-h2{
-    color:#1351b4;
-    margin-top:50px;
+/* =====================================================
+   CAPA
+===================================================== */
+
+.capa {
+    text-align: center;
+    padding: 50px 20px;
+    background: #005ea5;
+    color: white;
 }
 
-.indice{
-    background:#f5f5f5;
-    border:1px solid #d9d9d9;
-    border-radius:8px;
-    padding:20px;
-    margin:30px 0;
+.capa h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
-.indice ul{
-    padding-left:20px;
+.versao {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
 }
 
-.indice li{
-    margin-bottom:10px;
+.btn-imprimir {
+    background: white;
+    color: #005ea5;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
-.indice a{
-    text-decoration:none;
-    color:#1351b4;
+.btn-imprimir:hover {
+    background: #f0f0f0;
 }
 
-.indice a:hover{
-    text-decoration:underline;
+/* =====================================================
+   LAYOUT
+===================================================== */
+
+.container {
+    display: flex;
+    max-width: 1600px;
+    margin: auto;
 }
 
-.img-manual{
-    width:100%;
-    margin-top:20px;
-    margin-bottom:20px;
-    border:1px solid #ddd;
+/* =====================================================
+   MENU LATERAL
+===================================================== */
+
+.sidebar {
+    width: 300px;
+    min-width: 300px;
+    padding: 20px;
+    background: #ffffff;
+    border-right: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
 }
 
-section{
-    margin-bottom:50px;
+.sidebar h2 {
+    margin-bottom: 20px;
+    color: #005ea5;
 }
 
-ol li,
-ul li{
-    margin-bottom:8px;
-}
-.container{
-    display:flex;
-    gap:20px;
+.sidebar ul {
+    list-style: none;
 }
 
-.sidebar{
-    width:280px;
-    position:sticky;
-    top:20px;
-    align-self:flex-start;
-    max-height:90vh;
-    overflow:auto;
-    border-right:1px solid #ddd;
-    padding-right:15px;
-}
-
-.sidebar ul{
-    list-style:none;
-    padding:0;
-}
-
-.sidebar li{
-    margin-bottom:8px;
-}
-
-.sidebar a{
-    text-decoration:none;
-    color:#005ea5;
-}
-
-.sidebar a:hover{
-    text-decoration:underline;
-}
-
-main{
-    flex:1;
-    min-width:0;
-}
-
-#btn-topo{
-    display:none;
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    padding:10px 15px;
-    cursor:pointer;
-}
-
-.capa{
-    text-align:center;
-    padding:40px;
-}
-
-section{
-    scroll-margin-top:30px;
-}
+.sidebar li {
+    margin-bottom
