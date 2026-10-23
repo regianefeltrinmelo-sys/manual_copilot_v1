@@ -1,0 +1,27 @@
+/* =====================================================
+   IMPRESSÃO DO MANUAL
+   ===================================================== */
+
+@media print {
+
+    /* Configuração da página */
+    @page {
+        margin: 2cm;
+        size: A4;
+    }
+
+    html,
+    body {
+        background: #fff;
+        color: #000;
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    /* Oculta elementos de navegação */
+    .indice,
+    .voltar-topo,
+    nav,
+    footer {
+        display: none !important;
+ 
