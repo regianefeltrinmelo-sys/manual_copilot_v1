@@ -1,0 +1,22 @@
+/* =====================================================
+   MANUAL PESQUISA DE PREÇOS LITE
+   ===================================================== */
+
+:root{
+    --azul-gov:#1351b4;
+    --azul-hover:#0c326f;
+    --cinza-claro:#f5f5f5;
+    --cinza-borda:#d9d9d9;
+    --texto:#333333;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
