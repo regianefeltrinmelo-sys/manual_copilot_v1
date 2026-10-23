@@ -19,3 +19,30 @@
     }
 
 }
+@media print {
+
+    .sidebar{
+        display:none;
+    }
+
+    #btn-topo{
+        display:none !important;
+    }
+
+    button{
+        display:none;
+    }
+
+    body{
+        font-size:12pt;
+    }
+
+    h1{
+        page-break-before:auto;
+    }
+
+    section{
+        page-break-inside:avoid;
+    }
+
+}
